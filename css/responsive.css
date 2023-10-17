@@ -1,0 +1,14 @@
+/* PETITS ECRANS */
+@media all and (max-width: 800px){
+    .player-form {
+        margin-top: 15px
+    }
+}
+
+/* GRANDS ECRANS */
+@media all and (min-width: 800px){
+    .player-form {
+        flex-direction: row;
+    }
+}
+

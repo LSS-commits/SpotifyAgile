@@ -1,0 +1,54 @@
+/* ANIMATION PENDANT LE CHARGEMENT DU PLAYER
+*/
+.spotifyContainer{
+  position: relative;
+  margin: 40px auto;
+}
+
+iframe {
+    box-shadow: 0px 0px 15px #545454;
+    visibility: hidden;
+    margin-top: 50px;
+}
+
+.loaderContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.loader {
+    border: 12px solid var(--text-color-dark);
+    border-radius: 50%;
+    border-top: 12px solid var(--title-color);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { 
+      -webkit-transform: rotate(0deg); 
+    }
+    100% { 
+      -webkit-transform: rotate(360deg); 
+    }
+  }
+  
+  @keyframes spin {
+    0% { 
+      transform: rotate(0deg); 
+    }
+    100% { 
+      transform: rotate(360deg); 
+    }
+  }

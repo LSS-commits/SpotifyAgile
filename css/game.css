@@ -1,0 +1,115 @@
+/* Styles pour les joueurs et le bouton "Next" */
+/* Toggle les vues */
+.game {
+    display: none;
+    width: 80%;
+}
+
+/* Conteneur pour les éléments des joueurs */
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+
+/* Conteneur pour les éléments des joueurs */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--text-color-dark);
+    padding: 20px 10px;
+    box-shadow: 0px 0px 15px var(--text-color-dark);
+    border-radius: 15px;
+}
+
+/* Élément individuel du joueur */
+.player {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    border: 0px solid var(--text-color-dark);
+    border-radius: 12px;
+    color: var(--text-color-dark);
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.player p {
+    margin: 5px;
+}
+
+/* Style du texte du joueur */
+.player span {
+    font-size: 1rem;
+}
+
+/* Effet de survol pour le joueur */
+.player:hover {
+    background-color: var(--secondary-color-light);
+    box-shadow: 0px 0px 20px #000000;
+    color: #ffffff;
+}
+
+/* Style du joueur sélectionné */
+.player.selected {
+    background-color: var(--secondary-color-light);
+    box-shadow: 0px 0px 20px #000000;
+    color: white;
+}
+
+/* Style du bouton "Next" */
+.next-button {
+    display: none;
+    background-color: var(--title-color);
+    color: var(--text-color-dark);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Effet de survol pour le bouton "Next" */
+.next-button:hover {
+    background-color: var(--secondary-color-medium);
+}
+
+.fa-solid.fa-forward-step {
+    margin-right: 10px;
+}
+
+/* Section fin du jeu (trophy) */
+.trophy{
+    display: none;
+}
+
+.trophyImg {
+    height: 250px;
+}
+
+.bravo {
+    font-family: var(--text-font);
+    color: var(--text-color-light);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.trophy .finalBtn{
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: var(--secondary-color-light);
+    color: var(--text-color-dark);
+    font-size: 1rem;
+    font-family: var(--text-font);
+    padding: 10px 20px;
+}
